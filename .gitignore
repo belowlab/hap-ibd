@@ -31,3 +31,10 @@ build
 #Ignore IntelliJ Artifacts
 .idea/
 hap-ibd.iml
+.classpath
+.project
+.settings
+
+#Ignore test directory outputs
+*.hbd.gz
+*.ibd.gz
