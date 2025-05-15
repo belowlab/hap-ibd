@@ -117,7 +117,12 @@ public final class PbwtIbdDriver {
     private static SampleFileIt<RefGTRec> refIt(HapIbdPar par) {
         Filter<String> sFilter = FilterUtil.sampleFilter(par.excludesamples());
         Filter<Marker> mFilter = Filter.acceptAllFilter();
-        FileIt<String> it0 = InputIt.fromGzipFile(par.gt());
+        FileIt<String> it0 = null;
+        if (par.gt() == null) {
+            it0 = InputIt.fromStdIn();
+        } else {
+            it0 = InputIt.fromGzipFile(par.gt());
+        }
         return RefIt.create(it0, sFilter, mFilter);
     }
 

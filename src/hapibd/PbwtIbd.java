@@ -46,7 +46,8 @@ import vcf.Samples;
  *
  * @author Brian L. Browning {@code <browning@uw.edu>}
  */
-public final class PbwtIbd implements Runnable {
+public final class
+PbwtIbd implements Runnable {
 
     private static final int BAOS_THRESHOLD = 1<<18;
     private static final int SEED_LIST_THRESHOLD = 1<<16;
