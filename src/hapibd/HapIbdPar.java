@@ -115,7 +115,7 @@ public final class HapIbdPar {
         return "Syntax: " + HapIbdMain.COMMAND + " [arguments in format: parameter=value]" + nl
                 + nl
                 + "Data Parameters: " + nl
-                + "  gt=<VCF file with GT field>                         (required)" + nl
+                + "  gt=<VCF file with GT field>                         (optional)" + nl
                 + "  map=<PLINK map file with cM units>                  (required)" + nl
                 + "  out=<output file prefix>                            (required)" + nl
                 + "  excludesamples=<excluded samples file>              (optional)" + nl + nl
