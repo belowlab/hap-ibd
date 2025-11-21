@@ -8,8 +8,12 @@
 
 plugins {
     // Apply the application plugin to add support for building a CLI application in Java.
-    id 'application'
-    id("com.github.johnrengelman.shadow") version '7.1.2'
+    id('application')
+    id("com.gradleup.shadow") version "9.2.2"
+}
+
+repositories {
+    mavenCentral()
 }
 
 sourceSets {
@@ -31,7 +35,7 @@ jar {
     }
 }
 
-mainClassName = "hapibd.HapIbdMain"
+// mainClassName = "hapibd.HapIbdMain"
 
 application {
     // Define the main class for the application.
